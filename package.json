@@ -1,0 +1,45 @@
+{
+  "//": "npm publish --tag beta",
+  "name": "africa",
+  "version": "0.0.1",
+  "release": "Acid Africa",
+  "description": "Africa,js is a free, fast and mobile first HTML5 game framework with Canvas and WebGL support",
+  "author": "Alper Akgun <alperakgun@gmail.com> (http://www.zestoy.com)",
+  "logo": "http://www.zestoy.com/africa/africa.png",
+  "homepage": "http://www.zestoy.com/africa/",
+  "bugs": "https://github.com/photonstorm/africa/issues",
+  "license": "MIT",
+  "licenseUrl": "http://www.opensource.org/licenses/mit-license.php",
+  "main": "./src/africa.js",
+  "typings": "./typings/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "https://zestoy@github.com/zestoy/africa.git"
+  },
+  "scripts": {
+    "build": "webpack",
+    "watch": "webpack --watch",
+    "dist": "webpack --config webpack.dist.config.js",
+    "lint": "eslint --config .eslintrc.json \"src/**/*.js\"",
+    "sloc": "node-sloc './src' --include-extensions \"js\""
+  },
+  "keywords": [
+    "2d",
+    "HTML5",
+    "canvas",
+    "WebGL",
+    "game",
+    "javascript",
+    "physics",
+    "web audio"
+  ],
+  "devDependencies": {
+    "eslint": "^4.3.0",
+    "fs-extra": "^4.0.0",
+    "node-sloc": "^0.1.10",
+    "uglifyjs-webpack-plugin": "^0.4.6",
+    "uuid": "^3.1.0",
+    "webpack": "^3.4.1",
+    "webpack-shell-plugin": "^0.5.0"
+  }
+}
